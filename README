@@ -1,0 +1,23 @@
+Bad Board Test Program
+Author: D. Coderre
+Date: 13.01.2016
+
+Brief: Use a simple function to cause a crash
+
+Install: 
+
+	 - Install CAEN A2818 or A3818 HW and driver (see caen.it)
+	 - Install CAENVMElib (tested with 2.41)
+	 - Download this software. 
+	 - make
+
+Run:
+	- Connect to a V1724 directly to optical port. 
+	- Put some data on all channels of V1724
+	- ./bad_board_test
+	- Type 'r' then enter to take a little data. 
+	- Do that for a bit, then type 'q'.
+	- Open main.cc and change gCHANNEL_MASK to 0xFF
+	- Run program again --> it will crash. 
+
+	
